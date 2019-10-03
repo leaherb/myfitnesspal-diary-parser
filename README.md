@@ -3,7 +3,7 @@
 Parse a MyFitnessPal (MFP) diary from a free MFP account. Output data into one or more data structures (e.g. JSON, CSV, Pickle).
 
 ### Status 
-Proof-of-concept is complete: notebook/myfitnesspal-diary-parser.ipynb works as is. 
+Proof-of-concept is complete: notebooks/myfitnesspal-diary-parser.ipynb works as is. 
 
 Improvements actively being made:
 * update notebook to optimize functions that build various output options
@@ -11,7 +11,7 @@ Improvements actively being made:
 
 ## Purpose
 
-I am building a machine learning model to help identify foods that could be contributing to an individual's physical conditions(s). In order to train and use the model, I need data. MyFitnessPal is a popular on-line food & exercise journaling application. It has a free-account option and several methods for adding 'food reaction symptoms' to their journal, making it a great candidate tool for data creation. 
+I am building a machine learning model to help identify foods that could be contributing to an individual's physical condition(s). In order to train and use the model, I need data. MyFitnessPal is a popular on-line food & exercise journaling application. It has a free-account option and several methods for adding 'food reaction symptoms' to a journal, making it a great candidate tool for data creation. 
 
 To extract data from an individual's MFP account, I needed a parser. Which is the inspiration behind `myfitnesspal-diary-parser`.
 
@@ -34,7 +34,7 @@ This parser extracts all available MFP "Printable Diary" options available as of
 ## Instructions
 
 ### Download Your MFP diary
-To obtain a MyFitnessPal report in HTML format from a free account, follow these instructions (last tested: 2019-10-02).
+To download your MyFitnessPal diary from a free account, follow these instructions (last tested: 2019-10-02).
 
 Caveat: a maximum of 365 days worth of diaries can be extracted at one time. Fortunately, we can extract any 365 day time period.
 
@@ -45,8 +45,8 @@ Caveat: a maximum of 365 days worth of diaries can be extracted at one time. For
 4.	Check all boxes
 5.	“change report” button
 6.	From browser menu into the ../data directory:
-  1. File
-  2. Save Page as ... Webpage, Complete 
+  - File
+  - Save Page as ... Webpage, Complete 
 
 
 ### Run this parser
@@ -69,9 +69,9 @@ Note: Please take care to merge the latest from "upstream" before making a pull 
 
 
 ## TODO
-* improve README.md
-* avoid runtime option hardcoding
-* improve error handling
-* better logging
-* offer more output formats (e.g. SQL)
+- [ ] improve README.md
+- [ ] avoid runtime option hardcoding
+- [ ] improve error handling
+- [ ] better logging
+- [ ] offer more output formats (e.g. SQL)
 
