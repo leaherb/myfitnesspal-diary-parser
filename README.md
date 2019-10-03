@@ -2,6 +2,13 @@
 
 Parse a personal MyFitnessPal (MFP) diary into one or more data structure formats.
 
+### Status 
+Proof-of-concept is complete: notebook/myfitnesspal-diary-parser.ipynb works as is. 
+
+Improvements actively being made:
+* update notebook to optimize functions to build various output options.
+* gather runtime options (remove hardcoding)
+
 ## Purpose
 
 I was inspired to write a MFP parser because I am building a machine learning model to help identify foods that may contribute to an individual's adverse symptom(s). MyFitnessPal is a popular on-line food & exercise journaling application. It also has a couple options for entering 'symptoms' being experienced.
@@ -50,13 +57,25 @@ Caveat: a maximum of 365 days worth of diaries can be extracted at one time. For
 
 ## Input/Output
 
+## How to Contribute
+
+I encourage you to make pull requests and help improve this project.
+
+Use the Udacity Git Commit Message Style Guide (https://udacity.github.io/git-styleguide/), and follow the "fork-and-pull" Git workflow:
+
+1. Fork the repo on GitHub
+1. Clone the project to your own computer
+1. Commit changes to your own branch
+1. Push your work back up to your fork
+1. Submit a Pull request so that I can review your changes
+
+Note: Please take care to merge the latest from "upstream" before making a pull request.
+
 
 ## TODO
-* avoid filename hardcoding
-* error handling
+* improve README.md
+* avoid runtime option hardcoding
+* improve error handling
 * better logging
 * offer more output formats (e.g. SQL)
-* ship-shape
 
-## Status
-* Proof of concept completed.
