@@ -38,15 +38,15 @@ To download your MyFitnessPal diary from a free account, follow these instructio
 
 Caveat: a maximum of 365 days worth of diaries can be extracted at one time. Fortunately, we can extract any 365 day time period.
 
-1.  Logon with your MyFitnessPal account
-1.	FOOD (top menu bar)
-2.	“View Full Report” (button at bottom of page) 
-3.	Enter From/To date range
-4.	Check all boxes
-5.	“change report” button
-6.	From browser menu into the ../data directory:
-  - File
-  - Save Page as ... Webpage, Complete 
+1. Logon with your MyFitnessPal account
+1. FOOD (top menu bar)
+2. “View Full Report” (button at bottom of page) 
+3. Enter From/To date range
+4. Check all boxes
+5. “change report” button
+6. From browser menu into the ../data directory:
+   - File
+   - Save Page as ... Webpage, Complete 
 
 
 ### Run this parser
