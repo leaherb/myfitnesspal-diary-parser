@@ -1,32 +1,29 @@
 # MyFitnessPal Parser
 
-Parse a personal MyFitnessPal (MFP) diary into one or more data structure formats.
+Parse a MyFitnessPal (MFP) diary from a free MFP account. Output data into one or more data structures (e.g. JSON, CSV, Pickle).
 
 ### Status 
 Proof-of-concept is complete: notebook/myfitnesspal-diary-parser.ipynb works as is. 
 
 Improvements actively being made:
-* update notebook to optimize functions to build various output options.
-* gather runtime options (remove hardcoding)
+* update notebook to optimize functions that build various output options
+* create runtime options file (remove hardcoding)
 
 ## Purpose
 
-I was inspired to write a MFP parser because I am building a machine learning model to help identify foods that may contribute to an individual's adverse symptom(s). MyFitnessPal is a popular on-line food & exercise journaling application. It also has a couple options for entering 'symptoms' being experienced.
+I am building a machine learning model to help identify foods that could be contributing to an individual's physical conditions(s). In order to train and use the model, I need data. MyFitnessPal is a popular on-line food & exercise journaling application. It has a free-account option and several methods for adding 'food reaction symptoms' to their journal, making it a great candidate tool for data creation. 
 
-MyFitnessPal offers an API for extracting data. However, it is only available to premium paid account holders. 
+To extract data from an individual's MFP account, I needed a parser. Which is the inspiration behind `myfitnesspal-diary-parser`.
 
-By-pass the paid-account requirement by downloading your MFP diary (instructions below). Then run this parsing script.
+MyFitnessPal does offer an API for extracting data, and there are a number of github repositories to access that API. However, the API is only available to premium paid account holders. 
+
+By-pass the paid-account requirement by downloading your MFP diary (instructions below).
 
 This parser extracts all available MFP "Printable Diary" options available as of October 2019:
 * Food Diary
 * Exercise Diary
 * Food Notes
 * Exercise Notes
-
-### Runtime options
-* Manually downloaded diary filename (html format)
-* Data structure output format(s)
-
 
 #### Output format options
 * JSON (list of embedded dictionaries)
@@ -35,7 +32,6 @@ This parser extracts all available MFP "Printable Diary" options available as of
 
 
 ## Instructions
-
 
 ### Download Your MFP diary
 To obtain a MyFitnessPal report in HTML format from a free account, follow these instructions (last tested: 2019-10-02).
