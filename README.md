@@ -1,12 +1,12 @@
-# MyFitnessPal Parser
+# MyFitnessPal Diary Parser
 
-Parse a MyFitnessPal (MFP) diary from a free MFP account. Output data into one or more data structures (e.g. JSON, CSV, Pickle).
+Parse a free-account MyFitnessPal (MFP) diary into one or more data structures (e.g. JSON, CSV, Pickle).
 
 ### Status 
-Proof-of-concept is complete: notebooks/myfitnesspal-diary-parser.ipynb works as is. 
+Proof-of-concept is complete: notebooks/myfitnesspal-diary-parser.ipynb works 'as-is'. 
 
 Improvements actively being made:
-* update notebook to optimize functions that build various output options
+* update notebook to optimize functions that build the various output options
 * create runtime options file (remove hardcoding)
 
 ## Purpose
