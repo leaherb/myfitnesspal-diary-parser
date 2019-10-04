@@ -1,20 +1,18 @@
 # MyFitnessPal Diary Parser
 
-Parse a MyFitnessPal (MFP) diary into CSV file(s).
+Parse a MyFitnessPal diary into CSV file(s).
 
 ## Purpose
 
-The inspiration behind this parser is a machine learning model I'm working that will help identify foods that could be contributing to an individual's condition (e.g. allergy, IBS, keto level, etc.) 
+MyFitnessPal (MFP) is a popular on-line food & exercise diary application. It is easy to log daily food & exercise, and it generates nutrition statistics automatically.
 
-In order to analyze food logs, we need to create and access data in a format we can use. 
+People interested in independently analyzing MFP data need to be able to extract diary data in a usable format.
 
-MyFitnessPal is a popular on-line food & exercise journaling application. It has a free-account option and is a great candidate tool for data creation. 
+MyFitnessPal  offers an API for extracting data, and there are a number of github repositories to access that API. However, the API is only available to **premium paid account** holders. 
 
-MyFitnessPal does offer an API for extracting data, and there are a number of github repositories to access that API. However, the API is only available to premium paid account holders. 
+Fortunately, MFP provides **free-account** holders with an option to download their diary to an HTML file.
 
-What MFP does provide to free-account holders is a report we can download into an HTML file.
-
-To extract data from the downloaded HTML file into a format you can use, run this `myfitnesspal-diary-parser`.
+`myfitnesspal-diary-parser` is available to extract data from a downloaded HTML file, parsing it into a CSV file, which you can then use in any manner you see fit.
 
 ## Instructions
 
@@ -57,7 +55,7 @@ Note: Please take care to merge the latest from "upstream" before making a pull 
 
 ## TODO
 - [ ] improve README.md
-- [ ] consider reading/writing to/from data/input and data/output
+- [ ] consider separating input and output files into their own subdirectories
 - [x] avoid runtime option hardcoding
 - [ ] improve error handling
 - [ ] better logging
