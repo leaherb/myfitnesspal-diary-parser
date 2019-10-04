@@ -1,13 +1,9 @@
 # MyFitnessPal Diary Parser
 
-Parse a free-account MyFitnessPal (MFP) diary into one or more data structures (e.g. JSON, CSV, Pickle).
+Parse a free-account MyFitnessPal (MFP) diary into CSV file(s).
 
 ### Status 
 Proof-of-concept is complete: notebooks/myfitnesspal-diary-parser.ipynb works 'as-is'. 
-
-Improvements actively being made:
-* update notebook to optimize functions that build the various output options
-* create runtime options file (remove hardcoding)
 
 ## Purpose
 
@@ -24,12 +20,6 @@ This parser extracts all available MFP "Printable Diary" options available as of
 * Exercise Diary
 * Food Notes
 * Exercise Notes
-
-#### Output format options
-* JSON (list of embedded dictionaries)
-* Pickle (list of dataframes)
-* CSV file(s)
-
 
 ## Instructions
 
@@ -70,7 +60,8 @@ Note: Please take care to merge the latest from "upstream" before making a pull 
 
 ## TODO
 - [ ] improve README.md
-- [ ] avoid runtime option hardcoding
+- [ ] consider reading/writing to/from data/input and data/output
+- [x] avoid runtime option hardcoding
 - [ ] improve error handling
 - [ ] better logging
 - [ ] offer more output formats (e.g. SQL)
