@@ -1,0 +1,4 @@
+# ignore HTML even tho it's the biggest
+#*.html linguist-vendored
+# heavy-handed option to set repo type
+*.* linguist-language=Jupyter Notebook
