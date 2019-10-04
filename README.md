@@ -4,7 +4,7 @@ Parse a MyFitnessPal diary into CSV file(s).
 
 ## Purpose
 
-MyFitnessPal (MFP) is a popular on-line food & exercise diary application. It is easy to log daily food & exercise, and it generates nutrition statistics automatically.
+MyFitnessPal (MFP) is a popular, easy-to-use, on-line food & exercise diary application. MFP even generates nutrition statistics automatically.
 
 People interested in independently analyzing MFP data need to be able to extract diary data in a usable format.
 
