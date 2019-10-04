@@ -1,47 +1,44 @@
 # MyFitnessPal Diary Parser
 
-Parse a free-account MyFitnessPal (MFP) diary into CSV file(s).
-
-### Status 
-Proof-of-concept is complete: notebooks/myfitnesspal-diary-parser.ipynb works 'as-is'. 
+Parse a MyFitnessPal (MFP) diary into CSV file(s).
 
 ## Purpose
 
-I am building a machine learning model to help identify foods that could be contributing to an individual's physical condition(s). In order to train and use the model, I need data. MyFitnessPal is a popular on-line food & exercise journaling application. It has a free-account option and several methods for adding 'food reaction symptoms' to a journal, making it a great candidate tool for data creation. 
+The inspiration behind this parser is a machine learning model I'm working that will help identify foods that could be contributing to an individual's condition (e.g. allergy, IBS, keto level, etc.) 
 
-To extract data from an individual's MFP account, I needed a parser. Which is the inspiration behind `myfitnesspal-diary-parser`.
+In order to analyze food logs, we need to create and access data in a format we can use. 
+
+MyFitnessPal is a popular on-line food & exercise journaling application. It has a free-account option and is a great candidate tool for data creation. 
 
 MyFitnessPal does offer an API for extracting data, and there are a number of github repositories to access that API. However, the API is only available to premium paid account holders. 
 
-By-pass the paid-account requirement by downloading your MFP diary (instructions below).
+What MFP does provide to free-account holders is a report we can download into an HTML file.
 
-This parser extracts all available MFP "Printable Diary" options available as of October 2019:
-* Food Diary
-* Exercise Diary
-* Food Notes
-* Exercise Notes
+To extract data from the downloaded HTML file into a format you can use, run this `myfitnesspal-diary-parser`.
 
 ## Instructions
 
-### Download Your MFP diary
-To download your MyFitnessPal diary from a free account, follow these instructions (last tested: 2019-10-02).
+### 1. Download Your MFP diary to an HTML file
+(last tested: 2019-10-02)
 
 Caveat: a maximum of 365 days worth of diaries can be extracted at one time. Fortunately, we can extract any 365 day time period.
 
-1. Logon with your MyFitnessPal account
-1. FOOD (top menu bar)
-2. “View Full Report” (button at bottom of page) 
+1. Log onto with your MyFitnessPal account [https://www.myfitnesspal.com/]
+1. Click `FOOD` (in the top menu bar)
+2. Click `View Full Report` (at bottom of page) 
 3. Enter From/To date range
-4. Check all boxes
-5. “change report” button
-6. From browser menu into the ../data directory:
-   - File
-   - Save Page as ... Webpage, Complete 
+4. Check all boxes of interest (Food Diary, Exercise Diary, Food Notes, Exercise Notes)
+5. Click `change report` button on top right
+6. From your browser menu, click `File`
+6. `Save Page as` .... `Webpage, Complete` (exact menu options may differ depending on your browser)
 
+### 2. Update notebooks/config.ini
 
-### Run this parser
-
-## Input/Output
+### 3. Open and Run Jupyter Notebooks `myfitnesspal-diary-parser.ipynb`
+Depending on which 'boxes of interest' you chose when creating the report, a CSV file will be created for each:
+* Food Diary
+* Exercise Diary
+* Food and/or Exercise Notes
 
 ## How to Contribute
 
