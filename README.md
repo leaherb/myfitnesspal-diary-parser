@@ -8,7 +8,7 @@ MyFitnessPal (MFP) is a popular, easy-to-use, on-line food & exercise diary appl
 
 People interested in independently analyzing MFP data need to be able to extract diary data in a usable format.
 
-MyFitnessPal  offers an API for extracting data, and there are a number of github repositories to access that API. However, the API is only available to **premium paid account** holders. 
+MyFitnessPal  offers an API for extracting data, and there are a number of github repositories that help access that API. However, the API is only available to **premium paid account** holders. 
 
 Fortunately, MFP provides **free-account** holders with an option to download their diary to an HTML file.
 
@@ -73,5 +73,5 @@ Note: Please take care to merge the latest from "upstream" before making a pull 
 - [ ] improve error handling
 - [ ] better logging
 - [ ] offer more output formats (e.g. SQL)
-- [ ] extract from the notebook to make command-line friendly
+- [ ] convert notebook to .py, making it command-line friendly
 
