@@ -16,7 +16,14 @@ Fortunately, MFP provides **free-account** holders with an option to download th
 
 ## Instructions
 
-### 1. Download Your MFP diary to an HTML file
+Clone or download this GitHub repository.
+
+```sh
+$ git clone https://github.com/leaherb/myfitnesspal-diary-parser.git
+```
+Then ...
+
+#### 1. Download Your MFP diary to an HTML file
 (last tested: 2019-10-02)
 
 Caveat: a maximum of 365 days worth of diaries can be extracted at one time. Fortunately, we can extract any 365 day time period.
@@ -30,13 +37,19 @@ Caveat: a maximum of 365 days worth of diaries can be extracted at one time. For
 6. From your browser menu, click `File`
 6. `Save Page as` .... `Webpage, Complete` (exact menu options may differ depending on your browser)
 
-### 2. Update notebooks/config.ini
+#### 2. Update runtime options
+Edit **~/notebooks/config.ini** to update the name and location of your HTML file, and desired output files.
 
-### 3. Open and Run Jupyter Notebooks `myfitnesspal-diary-parser.ipynb`
+#### 3. Open Jupyter Notebooks 
+Run **~/notebooks/myfitnesspal-diary-parser.ipynb**
+
+#### Output
 Depending on which 'boxes of interest' you chose when creating the report, a CSV file will be created for each:
 * Food Diary
 * Exercise Diary
 * Food and/or Exercise Notes
+
+The output file(s) are named using the output_file name you identified in ~/notebooks/config.ini, prefixed with 'food_', 'exercise_', and/or 'notes_'.
 
 ## How to Contribute
 
@@ -60,4 +73,5 @@ Note: Please take care to merge the latest from "upstream" before making a pull 
 - [ ] improve error handling
 - [ ] better logging
 - [ ] offer more output formats (e.g. SQL)
+- [ ] extract from the notebook to make command-line friendly
 
